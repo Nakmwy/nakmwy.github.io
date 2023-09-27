@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugo.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d220f66941.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>U</span>go.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ugo-moissaing-347452213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span>Ugo</span> Moissaing</h1>
+                <p>Welcome to my portfolio!<br>I'm a 5th-year student at EPITA, and I'm excited<br>to showcase my journey in the world of IT.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="files/images/SAVE_20220808_095844 2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="files/Resume.pdf" target="_blank" download="Ugo_Moissaing-Resume" class="btn-filled">Download resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Run-projects website</h2>
+                    <p>Development of a website for a consultant company.</p>
+                    <p class="project-tech"><span>Language:</span> Html, Css, Javascript</p>
+                    <p class="project-tech"><span>Framework:</span> Vue.js</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web JAVA IDE</h2>
+                    <p>Development of a web Java IDE with a Java backend and a React.js frontend connected through a RestAPI. This project was done in a group of 4 people.</p>
+                    <p class="project-tech"><span>Language:</span> Java, Html, Css, Javascript</p>
+                    <p class="project-tech"><span>Framework:</span> React.js</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Tiger compilator</h2>
+                    <p class="project-tech">Development of a compilator for the Tiger language as the leader of a group of 4 people.</p>
+                    <p class="project-tech"><span>Language:</span> C++</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Posix shell</h2>
+                    <p>Development of a posix shell in a group of 4 people.</p>
+                    <p class="project-tech"><span>Language:</span> C</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>University online shop</h2>
+                    <p>Development of the online shop of Riga Technical University.</p>
+                    <p class="project-tech"><span>Language:</span> Html, Css, Javascript</p>
+                    <p class="project-tech"><span>Framework:</span> Wordpress</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Optical Character Recognition</h2>
+                    <p class="project-tech">Development of a Neuronal OCR with machine learning in a group of 4 people.</p>
+                    <p class="project-tech"><span>Language:</span> C</p>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Multiplayer RPG game</h2>
+                    <p>Development of a multiplayer Tower RPG 2D game, as well as a website to download the game and see the scoreboard in solo and CO-OP mode. Made in a groupe of 4 people.</p>
+                    <p class="project-tech"><span>Language:</span> C#</p>
+                    <p class="project-tech"><span>Framework:</span> Godot</p>
+                </div>
+            </div>
+            <!-- <a href="" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i>u.moissaing@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>+33 7 60 51 11 72</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ugo-moissaing-347452213/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="files/Resume.pdf" target="_blank" download="Ugo_Moissaing-Resume" class="btn-filled">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your message..." required></textarea>
+                        <button type="submit" class="btn-filled">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Ugo. Made by Ugo Moissaing</p>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+
+        function closemenu(){
+            sidemenu.style.right = '-300px';
+        }
+    </script>
+</body>
+</html>
